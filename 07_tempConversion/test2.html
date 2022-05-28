@@ -7,11 +7,49 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="tzatziki"></div>
+    <!-- <h1>
+        THE TITLE OF YOUR WEBPAGE
+    </h1> -->
+    <div id= "container"></div>
+    <!-- <div class="tzatziki"></div> -->
     <script>
-        const div = document.querySelector(".tzatziki")
-        div.textContent = "<span>Hello World</span>";
-        console.log(div);
+        // const div = document.querySelector(".tzatziki")
+        // div.textContent = "<span>Hello World</span>";
+        // console.log(div);
+        // const container = document.querySelector("#container");
+        // const content = document.createElement("div");
+        // content.classList.add("content");
+        // content.textContent = "This is the glorious text-content";
+        // container.appendChild(content);
+        // console.log(container);
+        const container = document.querySelector("#container");
+        const paragraph = document.createElement("p");
+        paragraph.classList.add("red");
+        paragraph.textContent= "I'm red!"
+        paragraph.style.color="red";
+        container.appendChild(paragraph);
+        const h3 = document.createElement("h3");
+        h3.textContent = "I'm a blue h3";
+        h3.style.color = "blue";
+        container.appendChild(h3);
+        // const newText = document.querySelector(".division");
+        // div.style.border = "black";
+        // div.style.color = "pink";
+        // const h1 = document.createElement("h1");
+        // h1.text.Content="I'm in a div";
+        // div.appendChild(h1);
+        // const paragraph2 = document.createElement("p");
+        // paragraph2.textContent = "ME TOO";
+        // dev.appendChild(paragraph2);
+        // container.appendChild(div);
+        const h1 = document.createElement("h1");
+        h1.textContent = "I'm in a div";
+        container.appendChild(h1);
+        const paragraph2 = document.CreateElement("p");
+        paragraph2.textContent = "ME TOO";
+        container.appendChild(paragraph2);
+        
+
     </script>
     
 </body>
