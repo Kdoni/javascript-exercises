@@ -10,28 +10,42 @@
 
 <body>
     <script>
-        const cat = {
-            name: 'Bertie',
-            breed: 'Cymric',
-            color: 'white',
-            greeting: function () {
-                console.log('Meow!');
-            }
-        }
+        // const cat = {
+        //     name: 'Bertie',
+        //     breed: 'Cymric',
+        //     color: 'white',
+        //     greeting: function () {
+        //         console.log('Meow!');
+        //     }
+        // }
 
-        const cat2 = {
-            name: "Matsi",
-            breed: "Stray",
-            color: "Purple",
-            greeting: function () {
-                console.log("Meow!");
-            }
-        }
+        // const cat2 = {
+        //     name: "Matsi",
+        //     breed: "Stray",
+        //     color: "Purple",
+        //     greeting: function () {
+        //         console.log("Meow!");
+        //     }
+        // }
 
+        function Cat(name, breed, color, greeting) {
+            this.name = name;
+            this.breed = breed;
+            this.color = color;
+            this.greeting = function () {
+                console.log(`Hello, said ${this.name} the ${this.breed}.`)
+            }
+        };
+
+        const cat = new Cat("Bertie", "Cymric", "white");
+        const cat2 = new Cat("Elfie", "Aphrodite Giant", "ginger");
         cat.greeting();
         cat2.greeting();
 
-        console.log("Hello said " + cat.name + " the " + cat.breed)
+        // cat.greeting();
+        // cat2.greeting();
+
+        // console.log("Hello said " + cat.name + " the " + cat.breed)
     </script>
 </body>
 
